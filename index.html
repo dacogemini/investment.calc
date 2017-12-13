@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-    <title>Example of HTML Text Field</title>
-<link rel="stylesheet" href="styles/style.css">
+  <title>Example of HTML Text Field</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="form.3.1.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body> 
-    <form>
-<p id="sayHello"><p>
- 
-<center><div class="container">
- <fieldset style="width:0px">
-      <legend>Information</legend>
-          <label for="invest">Investment:</label>
-            <input type="text" name="input" id="invest">
-          <label for="rate"> Rate (Numbers Only):</label>
-            <input type="text" name="rate-percentage" id="rate">
-          <label for="years"> Years (To Maturity):</label>
-          <input type="number" name="years-mat" id="years">
+
+<body>
+ <!-- Never use GET to send sensitive data! -->
+<!-- ACTION defines where the data gets sent.
+Its value must be a valid URL. If this attribute isn't
+provided, the data will be sent to the URL of the page
+containing the form. -->
+
+  <form name="form-i" action="" method="get">
+    <p id="sayHello">
+      <p>
+
+        <center>
+          <div class="container">
+            <fieldset style="width:0px">
+              <legend>INFORMATION</legend>
+              <label for="invest">Investment:</label>
+              <input type="text" name="input" id="invest">
+              <label for="rate">Rate:</label>
+              <input type="text" name="rate-percentage" id="rate">
+              <label for="years">Years:</label>
+              <input type="text" name="years-mat" id="years">
+              <div class="btn-container">
+<button type="button" class="btn btn-dark" onClick="testResults(this.form)">SUBMIT</button>
             </fieldset>
-        <div class="btn-container">
-        <button type="submit" form="nameform" value="Submit" width="200" height="auto">Submit</button>
+        </center>
         </div>
- 
-      </form>
-    </div></center>
-      <!--<form action="http://www.google.com/search">
+        </div>
+  </form>
+
+
+
+
+  <!--<form action="http://www.google.com/search">
         <input name="q">
         <input type="submit">
       </form>-->
 
-<!-- JAVASCRIPT -->
-<link rel="stylesheet" href="form.3.1.js">
+ 
 </body>
+
 </html>

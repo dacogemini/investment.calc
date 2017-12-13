@@ -1,16 +1,32 @@
 
 body {
-    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/UhGJuGw/global-business-finance-background_edwkxxznl__F0000.png);
+    background: url(http://grozav.com/plugins/bootslider/img/slide-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container {
     display: flex;
-    background-color: rgb(231, 243, 242);
+    background-color: rgb(236, 132, 13);
+    color: white;
+    justify-content: space-between;
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    margin: 200px;
+}
+
+.form-group {
+    display: flex;
     justify-content: space-around;
-    width: 40%;
+    background-color: rgb(219, 235, 224);
+    color: white;
+    width: 10%;
     height: auto;
     padding: 10px;
-    margin: 200px;
+}
+.btn-container {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
 }

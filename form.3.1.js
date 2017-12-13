@@ -1,7 +1,14 @@
-// Ask for Name in Pop-Up
-var yourName=prompt("What is your Name?");
-if (yourName !=null){ // If NAME is Not = to Nothing or if a NAME is entered
-  document.getElementById("sayHello").innerHTML = "Hello" + "\xa0" + yourName + "\xa0" + "Please Sign In";
-} else {
-  alert("Please Enter a Name");
+
+// VARIABLES
+var investment = 10000;
+var rate = 7;
+var years = 1;
+var futureValue = investment;
+
+// FOR LOOP -- 
+for (i = 1; i <= years; i++) {
+  futureValue = futureValue + (futureValue * rate/100);
 }
+
+alert(futureValue);
+console.log(futureValue);
